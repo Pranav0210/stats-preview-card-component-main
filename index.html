@@ -12,22 +12,47 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body
+    {
+      background-color: hsl(233, 47%, 7%);
+      padding: 100px;
+      margin:0px;
+      border:0px;
+    }
+    #stat-card{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      background-color: hsl(244, 38%, 16%);
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    .text{
+      padding:50px;
+
+    }
+    #image{
+      background-image: url(/images/image-header-desktop.jpg);
+    }
   </style>
 </head>
 <body>
 
-  Get insights that help your business grow.
+<div id= "stat-card">
+  <div class= "text">
+    <h1 id= "heading">Get insights that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <section id="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    experience, and overall efficiency.</section>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
+    <section id = "stats">10k+ companies
+    314 templates
+    12m+ queries</section>
+  </div>
+  <div id = "image"></div>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Pranav Patel</a>.
   </div>
 </body>
 </html>
