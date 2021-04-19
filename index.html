@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css">
+
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 15px; text-align: center; color:azure}
     .attribution a { color: hsl(228, 45%, 44%); }
     body
     {
@@ -24,14 +25,39 @@
       grid-template-columns: 50% 50%;
       background-color: hsl(244, 38%, 16%);
       box-sizing: border-box;
-      border-radius: 5px;
+      border-radius: 10px;
+      height: 400px;
     }
     .text{
       padding:50px;
-
+      grid-template-rows: 80px 80px 80px;
+      z-index: 10;
+      
+    }
+    #heading{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: 400;
+      color: white
     }
     #image{
-      background-image: url(/images/image-header-desktop.jpg);
+      background-image: url(image-header-desktop.jpg);
+      background-repeat: no-repeat;
+      border-radius: 0px 10px 10px 0px;
+    }
+    #para{
+      color: hsla(0, 0%, 100%, 0.75);
+      padding-top: 20px;
+    }
+    #stats{
+      font-weight: 700;
+      color: hsla(0, 0%, 100%, 0.6);
+      padding-top: 20px;
+      font-family: 'Lexend';
+      /*table needed*/
+    }
+    #accent{
+      z-index: 5;
+      background-color: hsl(277, 64%, 61%);
     }
   </style>
 </head>
@@ -39,20 +65,16 @@
 
 <div id= "stat-card">
   <div class= "text">
-    <h1 id= "heading">Get insights that help your business grow.</h1>
+    <h1 id= "heading">Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business grow.</h1>
 
-    <section id="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    <section id="para" >Discover the benefits of data analytics and make better decisions regarding revenue, customer 
     experience, and overall efficiency.</section>
 
-    <section id = "stats">10k+ companies
-    314 templates
+    <section id = "stats">10k+ companies<br>
+    314 templates<br>
     12m+ queries</section>
   </div>
-  <div id = "image"></div>
+  <div id = "image"><div id = "accent"></div></div>
 </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Pranav Patel</a>.
-  </div>
 </body>
 </html>
