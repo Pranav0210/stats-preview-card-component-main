@@ -45,13 +45,16 @@
     #image{
       background: url(./images/image-header-desktop.jpg);
       background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 0px 10px 10px 0px;
       z-index: 0;
+      opacity: unset;
     }
     #para{
       color: hsla(0, 0%, 100%, 0.75);
       padding-top: 20px;
       font-size: 15px;
+      font-family: 'Inter';
     }
     #stats{
       font-weight: 400;
@@ -59,7 +62,15 @@
       padding-top: 50px;
       font-family: 'Lexend Deca';
       text-transform: uppercase;
-      /*table needed*/
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+    }
+    .fact{
+      font-weight: 700;
+      color: white;
+      font-size: 25px;
+      font-family: 'Inter';
     }
     #accent{
       z-index: 5;
@@ -81,9 +92,14 @@
     <section id="para" >Discover the benefits of data analytics and make better decisions regarding revenue, customer 
     experience, and overall efficiency.</section>
 
-    <section id = "stats" class="change_grid">10k+ companies<br>
-    314 templates<br>
-    12m+ queries</section>
+    <section id = "stats">
+        <div class="fact">10k+</div> 
+        <div class="fact">314</div>
+        <div class="fact">12m+</div>
+        <div>companies</div>
+        <div>templates</div>
+        <div>queries</div>
+     </section>
   </div>
   <div id = "image" ><div id = "accent"></div></div>
 </div>
