@@ -6,7 +6,7 @@
       background-color: hsl(233, 47%, 7%);
       padding-right: 150px;
       padding-left: 150px;
-      padding-top: 95px;
+      padding-top: 100px;
       margin:0px;
       border:0px;
     }
@@ -67,4 +67,53 @@
       width: 100%;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
+    }
+    @media screen and (max-width: 376px){
+
+      body{
+        padding-left: 5px;
+        padding-top: 50px;
+        padding-right: 5px;
+      }
+      #stat-card{
+        display: flex;
+        flex-direction: column;
+      }
+      #image{
+      background: url(images/image-header-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px 10px 0px 0px;
+      grid-area: "image";
+      }
+    
+      #heading{
+        font-family: 'Inter';
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        grid-area: "heading";
+      }
+    
+      #para{
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-top: 20px;
+        font-size: 15px;
+        font-family: 'Inter';
+        line-height: 25px;
+        grid-area: "body";
+      }
+    
+      #stats{
+        grid-area: "stats";
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.6);
+        padding-top: 50px;
+        font-family: 'Inter';
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+      }
+    
     }
