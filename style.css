@@ -77,14 +77,22 @@
       }
       #stat-card{
         display: flex;
-        flex-direction: column;
+
+        /* Use column-reverse because the image was after the MAIN-TEXT-DIV */
+        flex-direction: column-reverse;
       }
       #image{
       background: url(images/image-header-mobile.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
+
+      /* Use 'contain' to keep the original size of the image */
+      background-size: contain;
       border-radius: 10px 10px 0px 0px;
       grid-area: "image";
+
+      /* Adjust height accordingly */
+      width: auto;
+      height: 270px;
       }
     
       #heading{
