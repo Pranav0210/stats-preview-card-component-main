@@ -21,7 +21,7 @@
     .text{
       padding:50px;
       grid-template-rows: 80px 80px 80px;
-      z-index: 10;
+      /*z-index: 10;*/
       
     }
     #heading{
@@ -34,8 +34,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 0px 10px 10px 0px;
-      z-index: 0;
-      opacity: unset;
     }
     #para{
       color: hsla(0, 0%, 100%, 0.75);
