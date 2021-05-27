@@ -77,10 +77,18 @@
 
       body{
         padding-left: 30px;
-        padding-top: 50px;
+        padding-top: 100px;
         padding-right: 30px;
-        padding-bottom: 50px;
+        /* padding-bottom: 70px; */
+        margin: 0px;
+        border:0px;
       }
+
+      .text{
+        padding:30px;
+
+      }
+
       #stat-card{
         display: flex;
 
@@ -91,7 +99,7 @@
       background: url(images/image-header-mobile.jpg);
       background-clip:border-box;
 
-      background-size:contain;
+      background-size:cover;
       border-radius: 15px 15px 0px 0px;
       grid-area: "image";
       background-repeat: no-repeat;
@@ -113,7 +121,7 @@
         color: white;
         text-align: center;
         grid-area: "heading";
-        font-size: 23px;
+        font-size: 28px;
         padding-top: 5px ;
         padding-bottom: 5px;
       }
@@ -121,7 +129,7 @@
       #para{
         color: hsla(0, 0%, 100%, 0.75);
         padding-top: 10px;
-        font-size: 12px;
+        font-size:15px;
         font-family: 'Inter';
         line-height: 25px;
         grid-area: "body";
@@ -134,7 +142,6 @@
         color: hsla(0, 0%, 100%, 0.6);
         padding-top: 50px;
         font-family: 'Inter';
-        text-transform: uppercase;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -146,15 +153,21 @@
       .stats :nth-child(4) { order: 1; }
       .stats :nth-child(5) { order: 2; }
       .stats :nth-child(6) { order: 3; }
+      
       .stats :not(.fact){
         text-transform: uppercase;
       }
+
+      .stats :not(.undertext){
+        font-size: x-large;
+      }
+      
       .undertext{
         padding-bottom: 15px;
-        font-size:x-small;
+        font-size:small;
       }
 
-      .fact{
+      .fact, .other_fact {
         font-size: large;
       }
     }
