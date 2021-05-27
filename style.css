@@ -73,7 +73,7 @@
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
-    @media screen and (max-width: 376px){
+    @media screen and (max-width: 721px){
 
       body{
         padding-left: 30px;
