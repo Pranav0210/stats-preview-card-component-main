@@ -60,16 +60,36 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This section recaps over some of my major learnings while working through this project.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+### 1. ordering flex columns
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+      .stats{
+        grid-area: "stats";
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.6);
+        padding-top: 50px;
+        font-family: 'Inter';
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .stats :nth-child(1) { order: 1; }
+      .stats :nth-child(2) { order: 2; }
+      .stats :nth-child(3) { order: 3; }
+      .stats :nth-child(4) { order: 1; }
+      .stats :nth-child(5) { order: 2; }
+      .stats :nth-child(6) { order: 3; }
+```
+### 2. excluding classes from certain parent attributes
+```css
+.stats :not(.fact){
+  text-transform: uppercase;
+}
+
+.stats :not(.undertext){
+  font-size: x-large;
 }
 ```
 ```js
