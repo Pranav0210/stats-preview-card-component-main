@@ -97,5 +97,5 @@ This section recaps over a couple of my major learnings while working through th
 
 ## Acknowledgments
 
-Thanks [Raj Aryan](@SilverGraph). Buddy u've been a great help when I was stuck.
+Thanks [Raj Aryan](https://github.com/SilverGraph). Buddy u've been a great help when I was stuck.
 
