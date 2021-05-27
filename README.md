@@ -92,7 +92,7 @@ This section recaps over a couple of my major learnings while working through th
 
 - Website - [Pranav Patel]()
 - Frontend Mentor - [Pranav0210](https://www.frontendmentor.io/profile/Pranav0210)
-- LinkedIn - [Pranav Patel](www.linkedin.com/in/pranav-patel-2821b7208)
+- LinkedIn - [Pranav Patel](https://www.linkedin.com/in/pranav-patel-2821b7208)
 
 
 ## Acknowledgments
